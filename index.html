@@ -41,10 +41,16 @@
             color: #B22222; /* Firebrick red - adjust as needed */
             margin-bottom: 1.5rem;
          }
-         .support-box a {
-            color: #DC143C; /* Crimson red - adjust as needed */
+         /* Style for links inside support-box (excluding buttons handled by Bootstrap) */
+         .support-box a:not(.btn) { /* Target links that AREN'T buttons */
+            color: #DC143C; /* Crimson red - for non-button links if any */
             font-weight: bold;
          }
+         /* Ensure button text color is handled by Bootstrap */
+         .support-box .btn {
+            /* Let Bootstrap handle text color */
+         }
+
         footer {
             margin-top: 4rem;
             padding: 2rem 0;
